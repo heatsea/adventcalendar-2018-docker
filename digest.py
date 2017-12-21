@@ -22,7 +22,7 @@ else:
     hash_md5.update(st)
     hash_sha256.update(st)
     hash_sha512.update(st)
-    for i in range(1000000):
+    for i in range(10000):
         #        sys.stderr.write('hello' + st + 'i:' + str(i) + '\r\n')
         hash_md5.update(hash_md5.hexdigest())
         hash_sha256.update(hash_sha256.hexdigest())
